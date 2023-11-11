@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<meta name="robots" content="noindex" />
+<meta name="AdsBot-Google" content="noindex" />
+<title>Familienbaum Frosch</title>
+<link rel="stylesheet" href="css/familienbaum.css">
+</head>
+
+<body>
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script src="js/dag.js"></script>
+	<script src="js/dag_layout.js"></script>
+	<script src="js/dag_with_relations.js"></script>
+	<script src="js/dag_with_family_data.js"></script>
+	<script src="js/dag_relaxation.js"></script>
+	<script src="js/dark_mode.js"></script>
+	<script src="js/familienbaum.js"></script>
+	<script src="js/editor.js"></script>
+	<script src="input.js"></script>
+	<script>
+		// Add an SVG tag
+		const div = d3.select("body").append("div").attr("class", "editing_div");
+		const svg = d3.select("body").append("svg").
+			attr("width", document.body.offsetWidth).
+			attr("height", document.documentElement.clientHeight);
+		
+		let familienbaum = new Familienbaum(_input, svg, div);
+		familienbaum.draw();
+	</script>
+</body>
+
+</html>
