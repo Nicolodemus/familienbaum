@@ -1,0 +1,76 @@
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #1A1A1A;
+}
+
+label, input {
+	font: 12px sans-serif;
+	background: #1A1A1A;
+	color: white;
+}
+
+button {
+	padding: 8px 8px;
+	font: 16px sans-serif;
+	background: #303030;
+	color: white;
+}
+
+image {
+	filter: saturate(75%)
+}
+
+.member {
+	fill: grey;
+	stroke-width: 2px;
+	z-index: 8;
+}
+
+.family {
+	fill: #1A1A1A;
+	stroke: grey;
+	stroke-width: 2px;
+	z-index: 7;
+}
+
+.highlighted {
+	fill: grey;
+	stroke: white;
+	stroke-width: 3px;
+}
+
+.non-highlighted {
+	fill: grey;
+	stroke: grey;
+	stroke-width: 3px;
+}
+
+.node-label {
+	font: 12px sans-serif;
+	fill: white;
+	fill-opacity: 1;
+	z-index: 9;
+}
+
+.plus-label {
+	font: 16px sans-serif;
+	fill: white;
+	fill-opacity: 0.75;
+	z-index: 6;
+}
+
+.link {
+	fill: none;
+	stroke: grey;
+	stroke-width: 2px;
+	z-index: 6;
+}
+
+.editing_div {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	z-index: 10;
+}
