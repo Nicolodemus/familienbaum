@@ -1,5 +1,9 @@
 # Description
 
+Explore and edit your family history seamlessly with this JavaScript-based software, offering an intuitive interface to visualize, browse, and effortlessly update the structure and details of your family tree, including names, birthdays, and more.
+
+![Animation showing how it works](images/README.gif)
+
 This is a re-implementation of [js_family_tree](https://github.com/BenPortner/js_family_tree), with the following improvements:
 
 * Simplified overall code structure
@@ -28,15 +32,17 @@ Modified package: **familienbaum**
 
 Following components are used:
 
-|Package|Link|
-|-------|----|
-|d3|[https://d3js.org/](https://d3js.org/)|
+d3
+
+|Package|d3|
+|:-------|:----|
+|Homepage|[https://d3js.org/](https://d3js.org/)|
+|Repository|[https://github.com/d3/d3](https://github.com/d3/d3)|
+|License|ISC License|
 
 # Example
 
 The file [index.html](index.html) provides an example.
-
-![Animation showing how it works](images/README.gif)
 
 # Data description
 
