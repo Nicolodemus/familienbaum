@@ -229,16 +229,15 @@ class Familienbaum
 	}
 
 	add_info_text(svg) {
-		return svg.append("g")
+		return svg.append("text")
 		.on("click", _ => {
 			this.editing_div.selectAll("form").remove();
 			this.create_info_form();
 		})
-		.append("text")
 		.attr("cursor", "pointer")
 		.attr("class", "info-text")
 		.attr("x", svg.attr("width")-16)
-		.attr("y", "1.5ex")
+		.attr("y", "24pt")
 		.text("ⓘ");
 	}
 };
