@@ -5,7 +5,13 @@ body {
 	background: #1A1A1A;
 }
 
-label, input {
+input {
+	font: 12pt sans-serif;
+	background: #1A1A1A;
+	color: white;
+}
+
+label {
 	font: 12pt sans-serif;
 	background: #1A1A1A;
 	color: white;
