@@ -277,3 +277,10 @@ Familienbaum.prototype.create_editing_form = function(node_of_dag, node_of_dag_a
 		}
 	}
 }
+
+Familienbaum.prototype.create_info_form = function() {
+	let form = this.editing_div.append("form");
+	form.append("label").html("Github Project: <a href=\"https://github.com/Nicolodemus/familienbaum\">Familienbaum</a><br>");
+	form.append("label").html("Based on <i>js_family_tree</i> by Benjamin W. Portner (GPLv3 license)<br>");
+	form.append("label").html("Using: JavaScript library <a href=\"https://d3js.org/\">d3</a> (ISC license)<br>");
+}
