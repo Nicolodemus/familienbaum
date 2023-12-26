@@ -6,7 +6,7 @@ body {
 }
 
 label, input {
-	font: 12px sans-serif;
+	font: 16px sans-serif;
 	background: #1A1A1A;
 	color: white;
 }
@@ -70,7 +70,16 @@ image {
 
 .editing_div {
 	position: absolute;
-	top: 16px;
-	left: 16px;
+	top: 8px;
+	left: 8px;
 	z-index: 10;
+}
+
+.info-text {
+	font: 24px sans-serif;
+	fill: white;
+	fill-opacity: 1;
+	dominant-baseline: hanging;
+	text-anchor: end;
+	z-index: 9;
 }

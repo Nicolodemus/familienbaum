@@ -9,6 +9,7 @@ class Familienbaum
 		this.g = this.svg.append("g");
 		this.zoom = d3.zoom().on("zoom", event => this.g.attr("transform", event.transform));
 		this.svg.call(this.zoom);
+		this.info = this.add_info_text(svg);
 		// Set the duration of a transition
 		this.transition_milliseconds = 500;
 		// Create the DAGs
@@ -225,6 +226,20 @@ class Familienbaum
 	is_expandable_in_dag_all(node) {
 		let adjacents = Array.from(this.get_relationship_in_dag_all(node));
 		return adjacents.some(adjacent => !adjacent.added_data.is_visible);
+	}
+
+	add_info_text(svg) {
+		return svg.append("g")
+		.on("click", _ => {
+			this.editing_div.selectAll("form").remove();
+			this.create_info_form();
+		})
+		.append("text")
+		.attr("cursor", "pointer")
+		.attr("class", "info-text")
+		.attr("x", svg.attr("width")-16)
+		.attr("y", 0)
+		.text("ⓘ");
 	}
 };
 
