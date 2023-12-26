@@ -238,7 +238,7 @@ class Familienbaum
 		.attr("cursor", "pointer")
 		.attr("class", "info-text")
 		.attr("x", svg.attr("width")-16)
-		.attr("y", "1ex")
+		.attr("y", "1.5ex")
 		.text("ⓘ");
 	}
 };
